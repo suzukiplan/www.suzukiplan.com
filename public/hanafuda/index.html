@@ -241,6 +241,15 @@
     </style>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3PHVK5F98J"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-3PHVK5F98J');
+</script>
+
 <body>
     <header class="hero">
         <div class="wrap">
@@ -312,7 +321,8 @@
 
             <div class="widget" role="region" aria-label="Steam wishlist widget">
                 <a href="https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/" target="_blank"
-                    id="steam_store_link">
+                    rel="noopener noreferrer" id="steam_store_link"
+                    onclick="gtag('event', 'steam_store_click', {event_category: 'outbound', event_label: 'battle_hanafuda_demo'});">
                     Add Battle Hanafuda to your Steam Wishlist
                 </a>
             </div>
