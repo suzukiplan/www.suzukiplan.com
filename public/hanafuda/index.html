@@ -27,6 +27,7 @@
 
     <link rel="preload" as="image" href="logo.png" />
     <link rel="preload" as="image" href="bg.png" />
+    <link rel="preload" as="image" href="anime_flip.gif" />
 
     <style>
         :root {
@@ -174,6 +175,30 @@
             margin: 6px 0;
         }
 
+        .flip-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .flip-row img {
+            width: 80px;
+            height: 112px;
+            display: block;
+        }
+
+        .panel-screenshot {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .panel-screenshot img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         /* ===== FIX: Always stack vertically (no side-by-side) ===== */
         .grid {
             display: grid;
@@ -279,7 +304,7 @@
                     stop and score now, or push for a bigger payout.
                 </p>
                 <p>
-                    New to Hanafuda? You’re covered. The game highlights legal plays, suggests captures, and shows clear
+                    New to Hanafuda? You're covered. The game highlights legal plays, suggests captures, and shows clear
                     progress
                     toward yaku (scoring hands) so you always understand your options.
                 </p>
@@ -297,11 +322,18 @@
                 </p>
             </section>
 
+            <div class="flip-row" aria-hidden="true">
+                <img src="anime_flip.gif" alt="" width="80" height="112" decoding="async" />
+                <img src="anime_flip.gif" alt="" width="80" height="112" decoding="async" />
+                <img src="anime_flip.gif" alt="" width="80" height="112" decoding="async" />
+                <img src="anime_flip.gif" alt="" width="80" height="112" decoding="async" />
+            </div>
+
             <aside class="panel" aria-labelledby="features">
                 <h1 id="features">Features</h1>
                 <ul class="bullets">
                     <li>Faithfully follows official Koi-Koi rules used in tournaments.</li>
-                    <li>Every card shows month (1–12) and point value (20 / 10 / 5 / 1) in Arabic numerals.</li>
+                    <li>Every card shows month (1-12) and point value (20 / 10 / 5 / 1) in Arabic numerals.</li>
                     <li>Designed so beginners can learn naturally in real matches.</li>
                     <li>Strategic “Koi-Koi” doubling creates constant risk-reward decisions.</li>
                     <li>Authentic Japanese-style BGM composed with FM synthesis (YM2612 / OPN2),
@@ -310,6 +342,11 @@
                     <li>Supports Offline Battle (vs CPU) and Online Battle (PvP).</li>
                 </ul>
             </aside>
+        </div>
+
+        <div class="panel panel-screenshot" aria-label="Gameplay screenshot">
+            <img src="screenshot.png" alt="Battle Hanafuda gameplay screenshot" width="1920" height="1080"
+                loading="lazy" decoding="async" />
         </div>
 
         <section class="panel" id="wishlist" aria-labelledby="wishlist-title">
