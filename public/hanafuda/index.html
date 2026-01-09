@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Battle Hanafuda — Wishlist on Steam</title>
+    <meta name="description"
+        content="Battle Hanafuda is a fast, strategic Koi-Koi experience with beginner-friendly guidance and online PvP. Add it to your Steam wishlist." />
+
+    <link rel="preload" as="image" href="logo.png" />
+    <link rel="preload" as="image" href="bg.png" />
+
+    <style>
+        :root {
+            --max: 980px;
+            --pad: 16px;
+            --radius: 14px;
+            --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+            --glass: rgba(10, 12, 20, .72);
+            --glass2: rgba(10, 12, 20, .55);
+            --line: rgba(255, 255, 255, .12);
+            --text: rgba(255, 255, 255, .92);
+            --muted: rgba(255, 255, 255, .75);
+            --muted2: rgba(255, 255, 255, .62);
+            --focus: rgba(255, 255, 255, .28);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            color: var(--text);
+            background-image: url("bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(80% 60% at 50% 15%, rgba(0, 0, 0, .35), rgba(0, 0, 0, .78));
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        header,
+        main,
+        footer {
+            position: relative;
+            z-index: 1;
+        }
+
+        .wrap {
+            width: min(var(--max), calc(100% - var(--pad) * 2));
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding: 18px 0 10px;
+            text-align: center;
+        }
+
+        .top-logo {
+            display: block;
+            width: min(82vw, 760px);
+            height: auto;
+            margin: 18px auto 10px;
+            filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .55));
+        }
+
+        .subhead {
+            margin: 0 auto 14px;
+            max-width: 48rem;
+            line-height: 1.35;
+            color: var(--muted);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+            font-size: 1.05rem;
+        }
+
+        .subhead strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .cta-row {
+            display: grid;
+            gap: 10px;
+            justify-items: center;
+            margin: 12px 0 14px;
+        }
+
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 18px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, .08);
+            box-shadow: var(--shadow);
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: .2px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .cta-primary:hover {
+            background: rgba(255, 255, 255, .12);
+        }
+
+        .cta-note {
+            font-size: .92rem;
+            color: var(--muted2);
+            margin: 0;
+        }
+
+        .panel {
+            background: transparent;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 18px;
+            margin: 14px 0;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 1.35rem;
+            letter-spacing: .2px;
+        }
+
+        p {
+            margin: 0 0 12px;
+            line-height: 1.65;
+            color: var(--muted);
+        }
+
+        .bullets {
+            margin: 10px 0 0;
+            padding: 0 0 0 18px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .bullets li {
+            margin: 6px 0;
+        }
+
+        /* ===== FIX: Always stack vertically (no side-by-side) ===== */
+        .grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: 1fr;
+        }
+
+        /* ===== /FIX ===== */
+
+        .micro {
+            font-size: .9rem;
+            color: var(--muted2);
+            margin-top: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, .06);
+            color: var(--muted);
+            font-size: .85rem;
+            margin: 0 6px 8px 0;
+        }
+
+        .widget {
+            background: var(--glass2);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 12px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 646px;
+            border: 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, .35);
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--focus);
+            outline-offset: 3px;
+            border-radius: 8px;
+        }
+
+        footer {
+            padding: 18px 0 28px;
+            text-align: center;
+            color: var(--muted2);
+            font-size: .85rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, .45);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <img class="top-logo" src="logo.png" alt="Battle Hanafuda" width="1600" height="400" />
+            <p class="subhead">
+                A modern, competitive take on <strong>Koi-Koi</strong> — the classic Japanese <em>Hanafuda</em> card
+                game.
+                <br />
+                <strong>Planned release Free Demo:</strong> February 2026 on Steam (Windows / macOS / Linux).
+            </p>
+
+            <div class="cta-row">
+                <a class="cta-primary" href="#wishlist" aria-label="Jump to Steam wishlist widget">Add to Steam
+                    Wishlist</a>
+                <p class="cta-note">Wishlist helps you get notified and supports the launch.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <div class="grid">
+            <section class="panel" aria-labelledby="about">
+                <h1 id="about">About</h1>
+                <p>
+                    Battle Hanafuda delivers short, high-tension matches built around the risk-reward “Koi-Koi”
+                    decision:
+                    stop and score now, or push for a bigger payout.
+                </p>
+                <p>
+                    New to Hanafuda? You’re covered. The game highlights legal plays, suggests captures, and shows clear
+                    progress
+                    toward yaku (scoring hands) so you always understand your options.
+                </p>
+
+                <div aria-label="Key tags">
+                    <span class="tag">Fast matches</span>
+                    <span class="tag">Beginner-friendly</span>
+                    <span class="tag">Koi-Koi rules</span>
+                    <span class="tag">Online PvP</span>
+                    <span class="tag">Offline vs CPU</span>
+                </div>
+
+                <p class="micro">
+                    You can check the full yaku list anytime with a single button.
+                </p>
+            </section>
+
+            <aside class="panel" aria-labelledby="features">
+                <h1 id="features">Features</h1>
+                <ul class="bullets">
+                    <li>Faithfully follows official Koi-Koi rules used in tournaments.</li>
+                    <li>Every card shows month (1–12) and point value (20 / 10 / 5 / 1) in Arabic numerals.</li>
+                    <li>Designed so beginners can learn naturally in real matches.</li>
+                    <li>Strategic “Koi-Koi” doubling creates constant risk-reward decisions.</li>
+                    <li>Supports Offline Battle (vs CPU) and Online Battle (PvP).</li>
+                </ul>
+            </aside>
+        </div>
+
+        <section class="panel" id="wishlist" aria-labelledby="wishlist-title">
+            <h1 id="wishlist-title">Wishlist on Steam</h1>
+            <p>
+                If this looks like your kind of game, add it to your Steam wishlist.<br>
+                You’ll get updates and release notifications, and it helps the game reach more players.
+            </p>
+
+            <div class="widget" role="region" aria-label="Steam wishlist widget">
+                <iframe src="https://store.steampowered.com/widget/4162420/" height="190" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        ©2025-2026, SUZUKI PLAN — Battle Hanafuda
+    </footer>
+</body>
+
+</html>
