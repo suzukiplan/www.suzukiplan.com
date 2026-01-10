@@ -358,11 +358,10 @@
 
             <div class="widget" role="region" aria-label="Steam wishlist widget">
                 <a href="https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/" target="_blank"
-                    rel="noopener noreferrer" id="steam_store_link" onclick="gtag('event', 'link_click', {
-     link_url: 'https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/',
-     link_domain: 'store.steampowered.com',
-     link_text: 'Battle Hanafuda Demo',
-     outbound: true
+                    rel="noopener noreferrer" id="steam_store_link" onclick="gtag('event', 'steam_outbound_click', {
+     destination: 'steam',
+     app_id: '4162420',
+     app_type: 'demo'
    });">
                     Add Battle Hanafuda to your Steam Wishlist
                 </a>
