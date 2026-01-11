@@ -1,0 +1,97 @@
+February 10, 2026
+
+[Exhibiting at Steam Next Fest 2026 Feb]
+Battle Hanafuda — A Modern Reimagining of the Traditional Hanafuda Game “Koi-Koi”
+Free Demo Available on Steam, with Limited-Time Online Multiplayer Access
+
+SUZUKI PLAN, an independent game development circle, is pleased to announce that **Battle Hanafuda**, a PC game that reimagines the traditional Japanese card game *Hanafuda (Koi-Koi)* as a modern competitive digital experience, will be exhibited at **Steam Next Fest 2026 Feb** (February 23 – March 2, 2026).
+
+A **free demo** will be available on Steam starting **February 11, 2026 at 10:00 JST**.
+In addition, for a **limited time until the end of Steam Next Fest 2026 Feb**, the demo version will also support **online multiplayer matches**.
+
+---
+
+## Reimagining “Koi-Koi” as a Modern Competitive Game
+
+Battle Hanafuda is based on the traditional Hanafuda ruleset known as *Koi-Koi*, while being carefully redesigned for modern digital play with a strong focus on competitive depth, pacing, and visual clarity.
+
+While preserving the appeal of classic Yaku combinations and strategic mind games, the game emphasizes:
+
+* A user interface and tempo that are easy for beginners to understand
+* Short, self-contained matches suitable for competitive play
+* Accessibility for players who enjoy digital card games, even without prior Hanafuda experience
+
+The rules follow the widely adopted standard Koi-Koi ruleset used in competitive events, while the game is designed so that complete newcomers can learn naturally through play.
+
+For example, collectible cards are visually highlighted during gameplay, allowing players to instantly understand which cards can be taken.
+A Yaku reference can be accessed at any time with a single button press, and every card clearly displays its month and point value, eliminating the need for memorization and lowering the entry barrier for new players.
+
+---
+
+## Online Multiplayer Available in the Free Demo (Limited Time)
+
+One of the core attractions of Hanafuda is the psychological tension and reading involved in player-versus-player (PvP) matches.
+Battle Hanafuda is planned to fully support online multiplayer in the full release.
+
+To allow more players to experience the competitive appeal of Hanafuda, **online multiplayer has been enabled in the free demo for a limited time during Steam Next Fest 2026 Feb**.
+
+The demo supports online play primarily through:
+
+* Friend Matches
+* Private Rooms (via shared room codes)
+
+This allows players to enjoy casual online matches with friends and other players worldwide, experiencing the true competitive nature of Hanafuda beyond AI opponents.
+
+---
+
+## Full Version with Official Online Multiplayer Support
+
+The full version of Battle Hanafuda is planned to feature online multiplayer as a core component, including:
+
+* Online matches with players around the world
+* A matchmaking infrastructure designed for future updates
+* A smooth and comfortable digital competitive environment
+
+The goal of the project is to establish traditional Hanafuda as a modern online competitive game that can be enjoyed globally.
+
+---
+
+## Steam Next Fest 2026 Feb Exhibition Details
+
+Event: Steam Next Fest 2026 Feb
+Dates: February 23 – March 2, 2026
+Exhibition Content: Free demo with limited-time online multiplayer support
+Platform: Steam (Windows / macOS / SteamOS / Linux)
+
+The latest information during the event will be shared via the Steam store page and official channels.
+
+---
+
+## About Battle Hanafuda
+
+Battle Hanafuda is a digital card game based on the traditional Japanese game Hanafuda (Koi-Koi), designed with a strong emphasis on competitive play and modern accessibility.
+
+While respecting long-established rules and traditions, the game is developed with the concept of allowing players around the world to enjoy serious online Hanafuda matches in a modern digital environment.
+
+---
+
+## Steam Store Page
+
+[https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/](https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/)
+
+---
+
+## Press Kit (Images and Full Text)
+
+[https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/](https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/)
+
+All text and image materials on the press kit page (screenshots and key visuals) may be freely used in articles.
+Images published on the Steam store page may also be used freely.
+
+---
+
+Copyright © 2025–2026 SUZUKI PLAN
+
+SUZUKI PLAN
+Yoji Suzuki
+[https://www.suzukiplan.com/](https://www.suzukiplan.com/)
