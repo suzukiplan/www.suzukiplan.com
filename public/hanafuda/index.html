@@ -274,16 +274,36 @@
             text-shadow: 0 2px 10px rgba(0, 0, 0, .45);
         }
     </style>
-</head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3PHVK5F98J"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-3PHVK5F98J');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PHVK5F98J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-3PHVK5F98J');
+    </script>
+
+    <script>
+        !function (w, d) {
+            if (!w.rdt) {
+                var p = w.rdt = function () {
+                    p.sendEvent ? p.sendEvent.apply(p, arguments)
+                        : p.callQueue.push(arguments)
+                };
+                p.callQueue = [];
+                var t = d.createElement("script");
+                t.src = "https://www.redditstatic.com/ads/pixel.js";
+                t.async = true;
+                var s = d.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(t, s);
+            }
+        }(window, document);
+
+        rdt('init', 'a2_iblqt47w9f1y');
+        rdt('track', 'PageVisit');
+    </script>
+</head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -376,7 +396,7 @@
 
         <div class="grid">
             <aside class="panel" aria-labelledby="whois">
-                <h1 id="features">Who is this for?</h1>
+                <h1 id="whois">Who is this for?</h1>
                 <ul class="bullets">
                     <li>Competitive card game players</li>
                     <li>Fans of fast, skill-based matches</li>
@@ -393,11 +413,14 @@
             </p>
 
             <a href="https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/" target="_blank"
-                rel="noopener noreferrer" id="steam_store_link" onclick="gtag('event', 'steam_outbound_click', {
-                destination: 'steam',
-                app_id: '4162420',
-                app_type: 'demo'
-                });">
+                rel="noopener noreferrer" id="steam_store_link" onclick="
+     gtag('event','steam_outbound_click',{destination:'steam',app_id:'4162420',app_type:'demo'});
+     rdt('track','AddToWishlist');
+     setTimeout(function(){
+       window.open('https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/','_blank','noopener');
+     },150);
+     return false;
+   ">
                 Add Battle Hanafuda to your Steam Wishlist
             </a>
         </section>
