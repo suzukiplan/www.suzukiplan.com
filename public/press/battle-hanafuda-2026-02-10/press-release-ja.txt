@@ -8,7 +8,7 @@
 同人サークル SUZUKI PLAN は、伝統的な花札ゲーム「こいこい」を現代的な対戦型カードゲームとして再構築した PC（Windows / macOS / Linux）向けタイトル『Battle Hanafuda』を、Steam Next Fest 2026 Feb（2026年2月23日〜3月2日）に出展することをお知らせいたします。
 
 明日、2026年2月11日（火）10:00 より、無料デモ版を Steam にて配信開始いたします。
-また本作は、Steam Next Fest 2026 Feb 終了までの期間限定で、無料デモ版でもオンライン対戦機能を利用可能です。
+また本作は、無料デモ版の公開開始から Steam Next Fest 2026 Feb の終了（3月2日）までの期間限定で、オンライン対戦機能を利用可能です。
 
 ――――――――――――――――――――
 「こいこい」を、現代的な対戦ゲームへ
@@ -79,7 +79,7 @@ Steam ストアページ
 プレスキット（画像素材・全文）
 ――――――――――――――――――――
 
-[https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/](https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/)
+[https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/ja/](https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/ja/)
 
 ※本ページ内の文章および画像素材（スクリーンショット／キービジュアル）は、御社記事内で自由にご使用いただけます。
 ※Steamストアページ掲載の画像についても、同様にご使用いただけます。

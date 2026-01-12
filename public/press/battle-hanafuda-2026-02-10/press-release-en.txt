@@ -7,7 +7,7 @@ Free Demo Available on Steam, with Limited-Time Online Multiplayer Access
 SUZUKI PLAN, an independent game development circle, is pleased to announce that **Battle Hanafuda**, a PC game that reimagines the traditional Japanese card game *Hanafuda (Koi-Koi)* as a modern competitive digital experience, will be exhibited at **Steam Next Fest 2026 Feb** (February 23 – March 2, 2026).
 
 A **free demo** will be available on Steam starting **February 11, 2026 at 10:00 JST**.
-In addition, for a **limited time until the end of Steam Next Fest 2026 Feb**, the demo version will also support **online multiplayer matches**.
+In addition, **online multiplayer will be available in the free demo for a limited time, from the demo launch until the end of Steam Next Fest 2026 Feb**.
 
 ---
 
@@ -33,7 +33,7 @@ A Yaku reference can be accessed at any time with a single button press, and eve
 One of the core attractions of Hanafuda is the psychological tension and reading involved in player-versus-player (PvP) matches.
 Battle Hanafuda is planned to fully support online multiplayer in the full release.
 
-To allow more players to experience the competitive appeal of Hanafuda, **online multiplayer has been enabled in the free demo for a limited time during Steam Next Fest 2026 Feb**.
+To allow more players to experience the competitive appeal of Hanafuda, **online multiplayer has been enabled in the free demo for a limited time, from the demo launch through the end of Steam Next Fest 2026 Feb (March 2)**.
 
 The demo supports online play primarily through:
 
@@ -83,7 +83,7 @@ While respecting long-established rules and traditions, the game is developed wi
 
 ## Press Kit (Images and Full Text)
 
-[https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/](https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/)
+[https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/en/](https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/en/)
 
 All text and image materials on the press kit page (screenshots and key visuals) may be freely used in articles.
 Images published on the Steam store page may also be used freely.
