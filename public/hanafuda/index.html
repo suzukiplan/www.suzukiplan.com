@@ -209,14 +209,11 @@
             display: block;
         }
 
-        /* ===== FIX: Always stack vertically (no side-by-side) ===== */
         .grid {
             display: grid;
             gap: 14px;
             grid-template-columns: 1fr;
         }
-
-        /* ===== /FIX ===== */
 
         .micro {
             font-size: .9rem;
@@ -233,14 +230,6 @@
             color: var(--muted);
             font-size: .85rem;
             margin: 0 6px 8px 0;
-        }
-
-        .widget {
-            background: var(--glass2);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 12px;
-            overflow: hidden;
         }
 
         iframe {
@@ -273,6 +262,15 @@
             font-size: .85rem;
             text-shadow: 0 2px 10px rgba(0, 0, 0, .45);
         }
+
+        /* i18n: default show EN, show/hide via [data-lang] on <html> */
+        [data-lang="en"] .i18n-ja {
+            display: none;
+        }
+
+        [data-lang="ja"] .i18n-en {
+            display: none;
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -303,6 +301,31 @@
         rdt('init', 'a2_iblqt47w9f1y');
         rdt('track', 'PageVisit');
     </script>
+
+    <script>
+        (function () {
+            // Rule:
+            //  - ?lang=ja or ?lang=en => fixed to that language
+            //  - if not specified     => use browser language; ja => ja, otherwise en
+            var params = new URLSearchParams(window.location.search);
+            var lang = (params.get('lang') || '').toLowerCase();
+
+            if (lang !== 'ja' && lang !== 'en') {
+                var langs = (navigator.languages && navigator.languages.length)
+                    ? navigator.languages
+                    : [navigator.language || navigator.userLanguage || 'en'];
+
+                var isJa = langs.some(function (l) {
+                    return (l || '').toLowerCase().indexOf('ja') === 0;
+                });
+
+                lang = isJa ? 'ja' : 'en';
+            }
+
+            document.documentElement.setAttribute('data-lang', lang);
+            document.documentElement.lang = lang;
+        })();
+    </script>
 </head>
 
 <body>
@@ -314,19 +337,37 @@
     <header class="hero">
         <div class="wrap">
             <img class="top-logo" src="logo.png" alt="Battle Hanafuda" width="1600" height="400" />
+
             <p class="subhead">
-                Fast competitive <strong>Koi-Koi</strong> — modern online <strong>Hanafuda.</strong><br />
-                Classic Hanafuda, reimagined for competitive online play.<br />
-                <br />
-                Free demo in February 2026<br />
-                — Online PvP unlocked for a <strong>limited time</strong> during <strong>Steam Next Fest</strong>
-                —<br />
+                <span class="i18n-en">
+                    Fast competitive <strong>Koi-Koi</strong> — modern online <strong>Hanafuda.</strong><br />
+                    Classic Hanafuda, reimagined for competitive online play.<br />
+                    <br />
+                    Free demo in February 2026<br />
+                    — Online PvP unlocked for a <strong>limited time</strong> during <strong>Steam Next Fest</strong>
+                    —<br />
+                </span>
+                <span class="i18n-ja">
+                    日本の伝統カードゲーム<strong>「花札」</strong>の人気ルール <strong>こいこい</strong> を、
+                    スピーディで戦略性の高い2人対戦ゲームとして再構築しました。
+                    2026年2月に無料デモ公開予定<br />
+                    — <strong>Steam Next Fest 2026 Feb</strong> 終了までの <strong>期間限定</strong> で、オンラインPvPがで解放 —<br />
+                </span>
             </p>
 
             <div class="cta-row">
-                <a class="cta-primary" href="#wishlist" aria-label="Jump to Steam wishlist widget">Add to Steam
-                    Wishlist</a>
-                <p class="cta-note">Wishlist now to get notified before the limited-time online PvP demo goes live.</p>
+                <a class="cta-primary" href="#wishlist" aria-label="Jump to Steam wishlist widget">
+                    <span class="i18n-en">Add to Steam Wishlist</span>
+                    <span class="i18n-ja">Steamウィッシュリストに追加</span>
+                </a>
+                <p class="cta-note">
+                    <span class="i18n-en">
+                        Wishlist now to get notified before the limited-time online PvP demo goes live.
+                    </span>
+                    <span class="i18n-ja">
+                        期間限定オンラインPvPデモの開始通知を受け取るため、今すぐウィッシュリストに追加してください。
+                    </span>
+                </p>
             </div>
         </div>
     </header>
@@ -334,40 +375,83 @@
     <main class="wrap">
         <div class="grid">
             <section class="panel" aria-labelledby="about">
-                <h1 id="about">About</h1>
+                <h1 id="about">
+                    <span class="i18n-en">About</span>
+                    <span class="i18n-ja">概要</span>
+                </h1>
 
                 <p>
-                    Battle Hanafuda is designed so that even if you’ve never played Hanafuda before,
-                    you always know what you’re aiming for.
-                </p>
-                <p>
-                    Potential scoring hands are highlighted in real time, legal captures are automatically judged,
-                    and you can instantly see when you’re <strong>one card away</strong> from completing a yaku.
-                    No memorization. No guesswork—just clear information and satisfying mind games from your very first
-                    match.
+                    <span class="i18n-en">
+                        Battle Hanafuda is designed so that even if you’ve never played Hanafuda before,
+                        you always know what you’re aiming for.
+                    </span>
+                    <span class="i18n-ja">
+                        Battle Hanafuda は、花札未経験でも「次に何をすれば良いか」が直感的に分かるように設計されています。
+                    </span>
                 </p>
 
                 <p>
-                    Battle Hanafuda delivers short, high-tension matches built around the risk-reward “Koi-Koi”
-                    decision: stop and score now, or push for a bigger payout.
+                    <span class="i18n-en">
+                        Potential scoring hands are highlighted in real time, legal captures are automatically judged,
+                        and you can instantly see when you’re <strong>one card away</strong> from completing a yaku.
+                        No memorization. No guesswork—just clear information and satisfying mind games from your very
+                        first match.
+                    </span>
+                    <span class="i18n-ja">
+                        取り札はリアルタイムでハイライトされます。
+                        さらに「役完成まで<strong>あと1枚</strong>」の激アツカードが即座に分かります。
+                        役、得点、カードの月も暗記不要。
+                        初戦から、情報が明確な駆け引きを楽しめます。
+                    </span>
                 </p>
+
                 <p>
-                    At the heart of every round is the classic question:
-                    take the points, or risk it all for something bigger.
-                    Strategic “Koi-Koi” doubling creates constant tension—and that’s what makes the game fast, deep, and
-                    endlessly replayable.
+                    <span class="i18n-en">
+                        Battle Hanafuda delivers short, high-tension matches built around the risk-reward “Koi-Koi”
+                        decision:
+                    </span>
+                    <span class="i18n-ja">
+                        Battle Hanafuda は「こいこい」のリスクとリターンを軸にした、短く高密度な対戦体験を提供します。
+                    </span>
+                </p>
+
+                <p>
+                    <span class="i18n-en">
+                        <i>stop and score now, or push for a bigger payout.</i>
+                    </span>
+                    <span class="i18n-ja">
+                        <i>いま上がって得点するか、より大きな見返りを狙って押すか。</i>
+                    </span>
+                </p>
+
+                <p>
+                    <span class="i18n-en">
+                        At the heart of every round is the classic question:
+                        take the points, or risk it all for something bigger.
+                        Strategic “Koi-Koi” doubling creates constant tension—and that’s what makes the game fast, deep,
+                        and endlessly replayable.
+                    </span>
+                    <span class="i18n-ja">
+                        「こいこい」の核心は、毎ラウンドの伝統的な問いです。
+                        いま点を取るか、すべてを賭けてさらに大きく狙うか。
+                        「こいこい」による倍付けの駆け引きが、常に緊張感を生み、速く・深く・何度でも遊べる対戦を作ります。
+                    </span>
                 </p>
 
                 <div aria-label="Key tags">
-                    <span class="tag">Fast matches</span>
-                    <span class="tag">Beginner-friendly</span>
-                    <span class="tag">Koi-Koi rules</span>
-                    <span class="tag">Online PvP</span>
-                    <span class="tag">Offline vs CPU</span>
+                    <span class="tag"><span class="i18n-en">Fast matches</span><span class="i18n-ja">短時間対戦</span></span>
+                    <span class="tag"><span class="i18n-en">Beginner-friendly</span><span
+                            class="i18n-ja">初心者対応</span></span>
+                    <span class="tag"><span class="i18n-en">Koi-Koi rules</span><span
+                            class="i18n-ja">こいこいルール</span></span>
+                    <span class="tag"><span class="i18n-en">Online PvP</span><span class="i18n-ja">オンライン対戦</span></span>
+                    <span class="tag"><span class="i18n-en">Offline vs CPU</span><span
+                            class="i18n-ja">CPU対戦</span></span>
                 </div>
 
                 <p class="micro">
-                    You can check the full yaku list anytime with a single button.
+                    <span class="i18n-en">You can check the full yaku list anytime with a single button.</span>
+                    <span class="i18n-ja">役一覧はワンボタンでいつでも確認できます。</span>
                 </p>
             </section>
 
@@ -379,32 +463,79 @@
 
             <div class="cta-row">
                 <p class="cta-note">
-                    Legal plays are highlighted in real time.<br />
-                    Clear yaku progress and scoring feedback.<br />
-                    Fast, readable match flow.
+                    <span class="i18n-en">
+                        Legal plays are highlighted in real time.<br />
+                        Clear yaku progress and scoring feedback.<br />
+                        Fast, readable match flow.
+                    </span>
+                    <span class="i18n-ja">
+                        取り札はリアルタイムでハイライト。<br />
+                        役の進捗と得点フィードバックが明確。<br />
+                        速く読みやすい試合運び。
+                    </span>
                 </p>
             </div>
 
             <aside class="panel" aria-labelledby="features">
-                <h1 id="features">Features</h1>
+                <h1 id="features">
+                    <span class="i18n-en">Features</span>
+                    <span class="i18n-ja">特徴</span>
+                </h1>
                 <ul class="bullets">
-                    <li>Faithfully follows official Koi-Koi rules used in tournaments.</li>
-                    <li>Every card shows month (1-12) and point value (20 / 10 / 5 / 1) in Arabic numerals.</li>
-                    <li>Designed so beginners can learn naturally in real matches.</li>
-                    <li>Real-time highlights make it easy to see legal plays and yaku progress—so you’re never lost.
-                    </li>
-                    <li>Strategic “Koi-Koi” doubling creates constant risk-reward decisions.</li>
-                    <li>Authentic Japanese-style BGM composed with FM synthesis (YM2612 / OPN2),
-                        appealing to classic chiptune and retro sound fans.
-                    </li>
-                    <li>Supports Offline Battle (vs CPU) and Online Battle (PvP).</li>
                     <li>
-                        Online matches are built for speed and tension:
-                        no pausing, no hand-checking, and all inputs are time-limited.
+                        <span class="i18n-en">Faithfully follows official Koi-Koi rules used in tournaments.</span>
+                        <span class="i18n-ja">大会で用いられる公式のこいこいルールに準拠。</span>
                     </li>
                     <li>
-                        Online PvP is available for a limited time in the demo during Steam Next Fest.
-                        Wishlist now to get notified before the free online PvP period goes live.
+                        <span class="i18n-en">Every card shows month (1-12) and point value (20 / 10 / 5 / 1) in Arabic
+                            numerals.</span>
+                        <span class="i18n-ja">全カードに「月(1-12)」と「点(20/10/5/1)」を数字で表示。</span>
+                    </li>
+                    <li>
+                        <span class="i18n-en">Designed so beginners can learn naturally in real matches.</span>
+                        <span class="i18n-ja">実戦の中で自然に覚えられるよう設計。</span>
+                    </li>
+                    <li>
+                        <span class="i18n-en">Real-time highlights make it easy to see legal plays and yaku progress—so
+                            you’re never lost.</span>
+                        <span class="i18n-ja">リアルタイム表示で合法手と役の進捗が分かりやすく、迷いません。</span>
+                    </li>
+                    <li>
+                        <span class="i18n-en">Strategic “Koi-Koi” doubling creates constant risk-reward
+                            decisions.</span>
+                        <span class="i18n-ja">「こいこい」の倍付けが、常にリスクとリターンの判断を生みます。</span>
+                    </li>
+                    <li>
+                        <span class="i18n-en">
+                            Authentic Japanese-style BGM composed with FM synthesis (YM2612 / OPN2),
+                            appealing to classic chiptune and retro sound fans.
+                        </span>
+                        <span class="i18n-ja">
+                            FM音源（YM2612 / OPN2）で制作した和風BGMを収録。チップチューン／レトロサウンド好きにも訴求。
+                        </span>
+                    </li>
+                    <li>
+                        <span class="i18n-en">Supports Offline Battle (vs CPU) and Online Battle (PvP).</span>
+                        <span class="i18n-ja">オフライン（CPU戦）とオンライン（PvP）に対応。</span>
+                    </li>
+                    <li>
+                        <span class="i18n-en">
+                            Online matches are built for speed and tension:
+                            no pausing, no hand-checking, and all inputs are time-limited.
+                        </span>
+                        <span class="i18n-ja">
+                            オンライン対戦はスピードと緊張感重視。ポーズ不可、手札確認なし、入力は時間制限付き。
+                        </span>
+                    </li>
+                    <li>
+                        <span class="i18n-en">
+                            Online PvP is available for a limited time in the demo during Steam Next Fest.
+                            Wishlist now to get notified before the free online PvP period goes live.
+                        </span>
+                        <span class="i18n-ja">
+                            Steam Next Fest期間中、デモでオンラインPvPが期間限定で解放されます。
+                            無料オンラインPvPの開始通知を受け取るため、今すぐウィッシュリストに追加してください。
+                        </span>
                     </li>
                 </ul>
             </aside>
@@ -417,20 +548,38 @@
 
         <div class="grid">
             <aside class="panel" aria-labelledby="whois">
-                <h1 id="whois">Who is this for?</h1>
+                <h1 id="whois">
+                    <span class="i18n-en">Who is this for?</span>
+                    <span class="i18n-ja">こんな人におすすめ</span>
+                </h1>
                 <ul class="bullets">
-                    <li>Competitive card game players</li>
-                    <li>Fans of fast, skill-based matches</li>
-                    <li>Players curious about Japanese tranditional games</li>
+                    <li><span class="i18n-en">Competitive card game players</span><span
+                            class="i18n-ja">対戦型カードゲームが好き</span></li>
+                    <li><span class="i18n-en">Fans of fast, skill-based matches</span><span
+                            class="i18n-ja">短時間で腕が出る勝負が好き</span></li>
+                    <li><span class="i18n-en">Players curious about Japanese tranditional games</span><span
+                            class="i18n-ja">日本の伝統ゲームに興味がある</span></li>
                 </ul>
             </aside>
         </div>
 
         <section class="panel" id="wishlist" aria-labelledby="wishlist-title">
-            <h1 id="wishlist-title">Wishlist on Steam</h1>
+            <h1 id="wishlist-title">
+                <span class="i18n-en">Wishlist on Steam</span>
+                <span class="i18n-ja">Steamでウィッシュリスト</span>
+            </h1>
+
             <p>
-                If this looks like your kind of game, add it to your Steam wishlist.<br>
-                You’ll get updates and release notifications, and it helps the game reach more players.
+                <span class="i18n-en">
+                    If this looks like your kind of game, add it to your Steam wishlist.<br>
+                    You’ll get updates and release notifications, and it helps the game reach more players.<br>
+                    Try the free demo and experience the limited-time online PvP during Steam Next Fest.
+                </span>
+                <span class="i18n-ja">
+                    気になったらSteamのウィッシュリストに追加してください。<br>
+                    更新情報やリリース通知を受け取れます。<br>
+                    無料デモで期間限定のオンライン対戦を是非とも体験してください。
+                </span>
             </p>
 
             <a href="https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/" target="_blank"
@@ -442,7 +591,8 @@
      },150);
      return false;
    ">
-                Add Battle Hanafuda to your Steam Wishlist
+                <span class="i18n-en">Add Battle Hanafuda to your Steam Wishlist</span>
+                <span class="i18n-ja">Battle Hanafuda Demo の Steam Store を開く</span>
             </a>
         </section>
     </main>
