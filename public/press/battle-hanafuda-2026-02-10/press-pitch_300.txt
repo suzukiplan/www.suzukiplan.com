@@ -1,0 +1,24 @@
+February 10, 2026
+
+**Battle Hanafuda — A Modern Competitive Card Game Inspired by Hanafuda (Koi-Koi)**
+
+SUZUKI PLAN, an independent game development circle based in Japan, is pleased to announce **Battle Hanafuda**, a competitive digital card game inspired by the traditional Japanese game *Hanafuda (Koi-Koi)*. The title will be exhibited at **Steam Next Fest 2026 Feb** (February 23–March 2, 2026).
+
+A **free demo** will be available on Steam starting **February 12, 2026 at 10:00 JST**.
+For a limited time, **online multiplayer will be enabled in the demo from launch through the end of Steam Next Fest**.
+
+Battle Hanafuda is not a historical simulator or a digital museum piece. It is a competitive card game designed from the ground up for **modern PC play**, using the traditional Koi-Koi ruleset as a foundation rather than a constraint. Matches are short and self-contained, emphasizing psychological mind games, timing, and risk management over memorization or heavy randomness.
+
+While based on the widely adopted standard Koi-Koi format, the game is carefully tuned so that **players with no prior Hanafuda experience can learn naturally through play**. Visual highlights indicate which cards can be collected, an in-game Yaku reference is always accessible, and each card clearly displays its month and point value—allowing players to focus on decisions rather than rules.
+
+To highlight the game’s competitive core, **online multiplayer is fully available in the free demo for a limited time**. Players can compete through **Friend Matches** or **Private Rooms using shared room codes**, experiencing real PvP mind games rather than AI-only play.
+
+The full version is planned to support online multiplayer as a core pillar, with worldwide matches and a stable, low-friction competitive environment. The long-term goal of the project is to establish Hanafuda as a **modern competitive card game that works naturally on PC platforms**, without requiring cultural or historical background knowledge.
+
+Battle Hanafuda is designed with **PC and Steam Deck as first-class targets**, running natively on Linux and SteamOS without Proton. A 640×400 base resolution scales cleanly to 1280×800, ensuring strong readability and comfort on Steam Deck.
+
+Steam demo page:
+[https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/](https://store.steampowered.com/app/4162420/Battle_Hanafuda_Demo/)
+
+Press kit (images and full text):
+[https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/en/](https://www.suzukiplan.com/press/battle-hanafuda-2026-02-10/en/)

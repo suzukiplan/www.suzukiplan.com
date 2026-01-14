@@ -2,16 +2,16 @@ February 10, 2026
 
 ---
 
-## [Exhibiting at Steam Next Fest 2026 Feb]
+## [Exhibiting in Steam Next Fest 2026 Feb]
 
 ### Battle Hanafuda — A Modern Competitive Card Game Inspired by Hanafuda (Koi-Koi)
 
 **Free Demo Available on Steam, with Limited-Time Online Multiplayer**
 
-SUZUKI PLAN, an independent game development circle based in Japan, is pleased to announce that **Battle Hanafuda**, a competitive digital card game inspired by the traditional Japanese game *Hanafuda (Koi-Koi)*, will be exhibited at **Steam Next Fest 2026 Feb** (February 23 – March 2, 2026).
+SUZUKI PLAN, an independent game development circle based in Japan, is pleased to announce that **Battle Hanafuda**, a competitive digital card game inspired by the traditional Japanese game *Hanafuda (Koi-Koi)*, will be exhibited in **Steam Next Fest 2026 Feb** (February 23 – March 2, 2026).
 
-A **free demo** will be available on Steam starting **February 11, 2026 at 10:00 JST**.
-For a limited time, **online multiplayer will be fully enabled in the demo from launch through the end of Steam Next Fest 2026 Feb (March 2)**.
+A **free demo** will be available on Steam starting **February 12, 2026 at 10:00 JST**.
+For a limited time, **online multiplayer will be enabled in the demo from launch through the end of Steam Next Fest 2026 Feb (March 2)**.
 
 ---
 
@@ -23,9 +23,9 @@ It is a competitive card game designed from the ground up for **modern PC play**
 The game emphasizes:
 
 * Short, self-contained matches suitable for repeated competitive play
-* Psychological mind games driven by hidden information and timing
 * Clear, readable visuals optimized for digital screens
-* Minimal reliance on randomness compared to typical casual card games
+* Psychological mind games driven by hidden information and timing
+* Minimal reliance on randomness compared to casual card games
 
 While the rules are based on the widely adopted standard Koi-Koi format, the game is carefully tuned so that **players with no prior Hanafuda experience can learn naturally through play**, without studying external rulebooks.
 
